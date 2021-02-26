@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FirstAndroidAPP</string>
+    <string name="hey_it_s_first_app">Hey! It\'s first APP</string>
+    <string name="first_number">First number</string>
+    <string name="second_number">Second number</string>
+    <string name="textview">TextView</string>
+    <string name="result">Result</string>
+    <string name="sum">SUM</string>
 </resources>
