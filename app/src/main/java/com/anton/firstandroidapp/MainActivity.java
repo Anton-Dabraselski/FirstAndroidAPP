@@ -3,16 +3,20 @@ package com.anton.firstandroidapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Log.i(TAG, "onCreate");
     }
 
     public void onButtonClick(View v){
@@ -26,6 +30,26 @@ public class MainActivity extends AppCompatActivity {
 
         resText.setText(Integer.toString(res));
 
+    }
+
+    public void onStart(){
+        super.onStart();
+        Log.i(TAG, "onStart");
+    }
+
+    public void onResume(){
+        super.onResume();
+        Log.i(TAG, "onResume");
+    }
+    public void onPause(){
+        super.onPause();
+        Log.i(TAG, "onPause");
+    }
+
+    @Override
+    public void onRestart(){
+        super.onRestart();
+        Log.i(TAG, "onRestart");
     }
 
 }
